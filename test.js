@@ -1,26 +1,92 @@
+
+
+_________________________________________________________________________
+
 const prompt = require("prompt-sync")();
+let n = prompt("Enter a number: ");
+n = parseInt(n);
+ let x= 100;
 
-let a;
-let b;
+ let j =1;
+ for(let i =1; i<=n; i++){
+    console.log(x);
+    let a = j*i;
 
-let c = prompt("Enter an operator: +, -, *, / : ");
+    x=x-a;
+}
+_________________________________________________________________________
 
-a = Number(prompt("Enter first number: "));
-b = Number(prompt("Enter second number: "));
+let m ;
+let z=500;
 
-switch(c){
-    case "+":
-        console.log("Addition answer is:", a + b);
-        break;
-    case "-":
-        console.log("Subtraction answer is:", a - b);
-        break;
-    case "*":
-        console.log("Multiplication answer is:", a * b);
-        break;
-    case "/":
-        console.log("Division answer is:", a / b);
-        break;
-    default:
-        console.log("Invalid operator");
+for (let i = 1 ; i<=10;i++){
+     console.log(z);
+    let a  = i**3;
+    z = z-a;
+    
+}
+
+_________________________________________________________________________
+
+let x = "*";
+  
+console.log(x);
+for (let i = 1; i <= 5; i++) {
+   let row = "";
+
+     console.log(x);
+    x = x+ "*";
+}
+
+
+___________________________________________________________________________
+
+
+let n = 5;
+
+for (let i = n; i >= 1; i--) {
+    let pattern = "";
+    for (let j = 1; j <= i; j++) {
+        pattern += "*";
+    }
+    console.log(pattern);
+}
+
+
+_________________________________________________________________________
+
+let n = 5;
+let star = " * ";
+let space = "  ";
+
+for(let i =1; i<=n; i++){
+let row= " ";
+
+     for(let j =1; j<=n-i; j++){
+            row = row + space;
+     }
+
+     for(let k =1; k<=i; k++){
+            row = row + star;
+     }
+     console.log(row);
+}
+
+_________________________________________________________________________
+
+let n = 5;
+let star = " * ";
+let space = "  ";
+
+for(let i =5;i>=n;i--){
+     let row= " ";
+
+     for(let j=5;j>=i;j--){
+            row = row + space;
+     }
+
+     for(let k =1;k<=i;k++){
+            row = row + star;
+     }
+     console.log(row);
 }
